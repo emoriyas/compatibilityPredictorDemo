@@ -46,7 +46,8 @@ A successful execution will return a 200 HTTP response with a JSON body that con
         },
         {
             "name" : "Applicant3",
-            "score" : 1.0},
+            "score" : 1.0
+        }.
         {
             "name" : "Applicant4",
             "score" : 1.0

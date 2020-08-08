@@ -1,0 +1,63 @@
+----------------------------------------------------------------------------------------------------------------------
+[1 team member and 1 applicant]
+
+curl -H "Content-Type:application/json" -X POST -d '{
+    \"team\" :
+        [ {\"name\":\"Team1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 10}} ],
+    \"applicants\" :
+        [ {\"name\":\"Applicant1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 1}} ] 
+}' localhost:8080/predict
+
+----------------------------------------------------------------------------------------------------------------------
+[5 team members and 1 applicant]
+
+curl -H "Content-Type:application/json" -X POST -d '{
+    \"team\" :
+        [
+            {\"name\":\"Team1\", \"attributes\": {\"strength\": 1, \"intelligence\": 10, \"endurance\": 5, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Team2\", \"attributes\": {\"strength\": 5, \"intelligence\": 8, \"endurance\": 4, \"spicyFoodTolerance\": 2}},
+            {\"name\":\"Team3\", \"attributes\": {\"strength\": 10, \"intelligence\": 7, \"endurance\": 6, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Team4\", \"attributes\": {\"strength\": 2, \"intelligence\": 9, \"endurance\": 5, \"spicyFoodTolerance\": 3}},
+            {\"name\":\"Team5\", \"attributes\": {\"strength\": 8, \"intelligence\": 8, \"endurance\": 5, \"spicyFoodTolerance\": 1}}
+        ],
+    \"applicants\" :
+        [ {\"name\":\"Applicant1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 1}} ] 
+}' localhost:8080/predict
+
+----------------------------------------------------------------------------------------------------------------------
+[1 team member and 5 applicants]
+
+curl -H "Content-Type:application/json" -X POST -d '{
+    \"team\" :
+        [ {\"name\":\"Team1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 10}} ],
+    \"applicants\" :
+        [
+            {\"name\":\"Applicant1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Applicant2\", \"attributes\": {\"strength\": 10, \"intelligence\": 10, \"endurance\": 10, \"spicyFoodTolerance\": 10}},
+            {\"name\":\"Applicant3\", \"attributes\": {\"strength\": 5, \"intelligence\": 5, \"endurance\": 5, \"spicyFoodTolerance\": 5}},
+            {\"name\":\"Applicant4\", \"attributes\": {\"strength\": 10, \"intelligence\": 5, \"endurance\": 5, \"spicyFoodTolerance\": 5}},
+            {\"name\":\"Applicant5\", \"attributes\": {\"strength\": 1, \"intelligence\": 10, \"endurance\": 1, \"spicyFoodTolerance\": 1}}
+        ] 
+}' localhost:8080/predict
+
+----------------------------------------------------------------------------------------------------------------------
+[5 team members and 5 applicants]
+
+curl -H "Content-Type:application/json" -X POST -d '{
+    \"team\" :
+        [
+            {\"name\":\"Team1\", \"attributes\": {\"strength\": 1, \"intelligence\": 10, \"endurance\": 5, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Team2\", \"attributes\": {\"strength\": 5, \"intelligence\": 8, \"endurance\": 4, \"spicyFoodTolerance\": 2}},
+            {\"name\":\"Team3\", \"attributes\": {\"strength\": 10, \"intelligence\": 7, \"endurance\": 6, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Team4\", \"attributes\": {\"strength\": 2, \"intelligence\": 9, \"endurance\": 5, \"spicyFoodTolerance\": 3}},
+            {\"name\":\"Team5\", \"attributes\": {\"strength\": 8, \"intelligence\": 8, \"endurance\": 5, \"spicyFoodTolerance\": 1}}
+        ],
+    \"applicants\" :
+        [
+            {\"name\":\"Applicant1\", \"attributes\": {\"strength\": 1, \"intelligence\": 1, \"endurance\": 1, \"spicyFoodTolerance\": 1}},
+            {\"name\":\"Applicant2\", \"attributes\": {\"strength\": 10, \"intelligence\": 10, \"endurance\": 10, \"spicyFoodTolerance\": 10}},
+            {\"name\":\"Applicant3\", \"attributes\": {\"strength\": 5, \"intelligence\": 5, \"endurance\": 5, \"spicyFoodTolerance\": 5}},
+            {\"name\":\"Applicant4\", \"attributes\": {\"strength\": 10, \"intelligence\": 5, \"endurance\": 5, \"spicyFoodTolerance\": 5}},
+            {\"name\":\"Applicant5\", \"attributes\": {\"strength\": 1, \"intelligence\": 10, \"endurance\": 1, \"spicyFoodTolerance\": 1}}
+        ] 
+}' localhost:8080/predict

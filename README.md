@@ -8,23 +8,23 @@ Once running, the application will listen to port 8080 for POST requests with a 
 {
     "team" : [
         {
-            "name":"Team1",
+            "name" : "Team1",
             "attributes" : {
-                "strength": 1,
-                "intelligence": 1,
-                "endurance": 1,
-                "spicyFoodTolerance": 10
+                "strength" : 1,
+                "intelligence" : 1,
+                "endurance" : 1,
+                "spicyFoodTolerance" : 10
             }
         }
     ],
     "applicants" : [
         {
-            "name" :"Applicant1",
+            "name" : "Applicant1",
             "attributes" : {
-                "strength": 1,
-                "intelligence": 1,
-                "endurance": 1,
-                "spicyFoodTolerance": 1
+                "strength" : 1,
+                "intelligence" : 1,
+                "endurance" : 1,
+                "spicyFoodTolerance" : 1
             }
         }
     ] 
@@ -53,7 +53,7 @@ A successful execution will return a 200 HTTP response with a JSON body that con
         },
         {
             "name" : "Applicant5",
-            "score":0.5
+            "score" : 0.5
         }
     ]
 }
